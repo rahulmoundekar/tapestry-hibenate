@@ -1,0 +1,28 @@
+<html t:type="layout" title="Index | tapestry-hibernate-curd"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+
+	<!-- Most of the page content, including <head>, <body>, etc. tags, comes 
+		from Layout.tml -->
+
+	<!-- Main hero unit for a primary marketing message or call to action -->
+	<div class="row hero-unit">
+		<p>
+			<img src="${asset:context:images/tapestry.png}"
+				alt="${message:greeting}" title="${message:greeting}" width="550"
+				height="230" />
+		</p>
+		<h1>${message:greeting}</h1>
+		<p>
+			The current time is:
+			<strong>${currentTime}</strong>
+		</p>
+		
+		<p>
+			<t:actionlink t:id="learnmore"
+				class="btn btn-primary btn-large">Learn
+				more &raquo;
+			</t:actionlink>
+		</p>
+	</div>
+
+</html>

@@ -1,0 +1,22 @@
+<html t:type="layout" title="EMS"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+	xmlns:p="tapestry:parameter">
+
+
+	<div class="row">
+		<div class="span12">
+			<h1>EMS </h1>
+		</div>
+	</div>
+
+
+
+	<t:beaneditform object="employee"
+		reorder="userName,password,firstName,lastName,
+      gender,email,phone,street,city,state,zip" />
+
+	<t:grid source="Employees"
+		include="id,userName,firstName,lastName,gender,phone,city,state"></t:grid>
+
+</html>
+	  

@@ -1,0 +1,115 @@
+EXCEPTION STACK:
+
+
+  Exception: java.lang.NoClassDefFoundError
+    Message: org/apache/commons/lang3/StringUtils
+
+  Stack trace:
+
+  - org.apache.tapestry5.internal.services.assets.ChecksumPath.<init>(ChecksumPath.java:48)
+  - org.apache.tapestry5.internal.services.assets.ClasspathAssetRequestHandler.handleAssetRequest(ClasspathAssetRequestHandler.java:56)
+  - org.apache.tapestry5.internal.services.AssetDispatcher.dispatch(AssetDispatcher.java:122)
+  - $Dispatcher_28e71b8905c1b.dispatch(Unknown Source)
+  - $Dispatcher_28e71b8905c25.dispatch(Unknown Source)
+  - $Dispatcher_28e71b8905c19.dispatch(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$RequestHandlerTerminator.service(TapestryModule.java:305)
+  - org.apache.tapestry5.internal.services.RequestErrorFilter.service(RequestErrorFilter.java:26)
+  - $RequestHandler_28e71b8905c1a.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$3.service(TapestryModule.java:848)
+  - $RequestHandler_28e71b8905c1a.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$2.service(TapestryModule.java:838)
+  - $RequestHandler_28e71b8905c1a.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.StaticFilesFilter.service(StaticFilesFilter.java:89)
+  - $RequestHandler_28e71b8905c1a.service(Unknown Source)
+  - com.app.services.AppModule$1.service(AppModule.java:111)
+  - $RequestFilter_28e71b8905c14.service(Unknown Source)
+  - $RequestHandler_28e71b8905c1a.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.CheckForUpdatesFilter$2.invoke(CheckForUpdatesFilter.java:105)
+  - org.apache.tapestry5.internal.services.CheckForUpdatesFilter$2.invoke(CheckForUpdatesFilter.java:95)
+  - org.apache.tapestry5.ioc.internal.util.ConcurrentBarrier.withRead(ConcurrentBarrier.java:83)
+  - org.apache.tapestry5.internal.services.CheckForUpdatesFilter.service(CheckForUpdatesFilter.java:119)
+  - $RequestHandler_28e71b8905c1a.service(Unknown Source)
+  - $RequestHandler_28e71b8905c0e.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$HttpServletRequestHandlerTerminator.service(TapestryModule.java:256)
+  - org.apache.tapestry5.internal.gzip.GZipFilter.service(GZipFilter.java:59)
+  - $HttpServletRequestHandler_28e71b8905c10.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.IgnoredPathsFilter.service(IgnoredPathsFilter.java:69)
+  - $HttpServletRequestFilter_28e71b8905c0b.service(Unknown Source)
+  - $HttpServletRequestHandler_28e71b8905c10.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$1.service(TapestryModule.java:798)
+  - $HttpServletRequestHandler_28e71b8905c10.service(Unknown Source)
+  - $HttpServletRequestHandler_28e71b8905c0a.service(Unknown Source)
+  - org.apache.tapestry5.TapestryFilter.doFilter(TapestryFilter.java:166)
+  - org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+  - org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  - org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+  - org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+  - org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+  - org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+  - org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+  - org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+  - org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+  - org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+  - org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+  - org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+  - org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+  - org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+  - java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+  - java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+  - org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+  - java.lang.Thread.run(Unknown Source)
+
+REQUEST:
+
+Basic Information:
+
+      contextPath: 
+           method: GET
+             path: /assets/meta/zee34e021/tapestry5/font_awesome/css/font-awesome.css
+           locale: en_US
+       serverName: localhost
+       remoteHost: 0:0:0:0:0:0:0:1
+
+Headers:
+
+           accept: text/css,*/*;q=0.1
+  accept-encoding: gzip, deflate, br
+  accept-language: en-US
+       connection: keep-alive
+           cookie: jenkins-timestamper-offset=-19800000; remember_token=2|c1f99b337aeb5640b0739818750301e5f43b8ef2af64b6d820d42e0a133b586fe7df92121b4887d534a5676085be79483c37f68d697039a76e5c43cb4286e5d4; Pycharm-90713ac=8d881bb3-5934-436d-957a-7f239c8b3fa3; acceptcookiefreecounterstat=ok; counter_nv=837dee1eb44be9116ad79608fca25968
+              dnt: 1
+             host: localhost:8080
+          referer: http://localhost:8080/
+       user-agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36 Maxthon/5.3.8.2000
+
+SYSTEM INFORMATION:
+
+Memory:
+      120,982,640 bytes free
+      263,716,864 bytes total
+    1,847,590,912 bytes max
+
+23 Threads:
+                  Reference Handler WAITING, daemon, priority 10
+                          Finalizer WAITING, daemon, priority 8
+                  Signal Dispatcher RUNNABLE, daemon, priority 9
+                    Attach Listener RUNNABLE, daemon
+          Tapestry PeriodicExecutor TIMED_WAITING
+                 Catalina-utility-1 WAITING, priority 1
+                 Catalina-utility-2 TIMED_WAITING, priority 1
+                        container-0 TIMED_WAITING
+  NioBlockingSelector.BlockPoller-1 RUNNABLE, daemon
+               http-nio-8080-exec-1 WAITING, daemon
+               http-nio-8080-exec-2 WAITING, daemon
+*              http-nio-8080-exec-3 RUNNABLE, daemon
+               http-nio-8080-exec-4 WAITING, daemon
+               http-nio-8080-exec-5 BLOCKED, daemon
+               http-nio-8080-exec-6 RUNNABLE, daemon
+               http-nio-8080-exec-7 BLOCKED, daemon
+               http-nio-8080-exec-8 BLOCKED, daemon
+               http-nio-8080-exec-9 RUNNABLE, daemon
+              http-nio-8080-exec-10 WAITING, daemon
+       http-nio-8080-ClientPoller-0 RUNNABLE, daemon
+       http-nio-8080-ClientPoller-1 RUNNABLE, daemon
+           http-nio-8080-Acceptor-0 RUNNABLE, daemon
+                      DestroyJavaVM RUNNABLE
